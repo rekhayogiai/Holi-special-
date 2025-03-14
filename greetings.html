@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holi Greetings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h2>💌 Holi Greetings</h2>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="games.html">🎈 Games</a>
+            <a href="greetings.html">💌 Greetings</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <div class="container">
+        <h2>🎉 Get Your Holi Greeting 🎁</h2>
+        <input type="text" id="userName" placeholder="Enter Your Name">
+        <select id="language">
+            <option value="hindi">हिन्दी</option>
+            <option value="english">English</option>
+            <option value="hinglish">Hinglish</option>
+        </select>
+        <button onclick="generateGreeting()">🎨 Generate Greeting</button>
+    </div>
+
+    <!-- Greeting Card (Centered) -->
+    <div class="greeting-card" id="greetingCard">
+        <h2>Happy Holi! 🌸</h2>
+        <p id="greetingText"></p>
+     <!-- Copy Button (Shayari के नीचे Add करें) -->
+<button onclick="copyShayari()" class="copy-btn">📋 Copy</button>
+        <button onclick="goBack()" class="back-btn">🔙 Back</button>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
